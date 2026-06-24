@@ -58,3 +58,45 @@
       </div>
     </div>
   </div>
+  <!-- ===== TO DO LIST ===== -->
+  <div class="card">
+    <div class="section-header">
+      <div class="section-title">
+        <span class="dot dot-todo"></span>
+        To Do
+        <span class="count-badge todo" id="todoCount">0</span>
+      </div>
+      <button class="btn-delete-all" onclick="deleteAll()">
+        <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="3 6 5 6 21 6"/>
+          <path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/>
+          <path d="M10 11v6"/><path d="M14 11v6"/>
+          <path d="M9 6V4h6v2"/>
+        </svg>
+        Hapus Semua
+      </button>
+    </div>
+
+    <div class="task-list" id="todoList">
+      <div class="empty-state">
+        <svg viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="3" width="18" height="18" rx="3"/>
+          <path d="M8 12h8M8 8h8M8 16h5"/>
+        </svg>
+        <p>Belum ada tugas. Yuk tambahkan!</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== OVERDUE ===== -->
+  <div class="card overdue-card" id="overdueSection" style="display:none;">
+    <div class="section-header">
+      <div class="section-title">
+        <span class="dot dot-overdue"></span>
+        Overdue / Terlambat
+        <span class="count-badge overdue" id="overdueCount">0</span>
+      </div>
+    </div>
+    <div class="task-list" id="overdueList"></div>
+  </div>
+
